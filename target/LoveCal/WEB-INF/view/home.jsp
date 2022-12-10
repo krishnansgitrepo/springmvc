@@ -21,7 +21,7 @@
     </script>
 </head>
 <body>
-<form:form action="calculate" method="post" modelAttribute="userInfo">
+<form:form action="calculate" method="get" modelAttribute="userInfo">
     <div align="center">
         <h1>Calculate Love</h1>
         <label for="nid">Name:</label><form:input id="nid" path="userName"/><br>
