@@ -5,8 +5,10 @@ import javax.validation.constraints.*;
 
 
 public class UserInfoDto {
+
     @Size(min = 3, max = 10, message = "* Username should be between 3 and 10 characters.")
     private String userName;
+    @Size(min = 3, max = 10, message = "* Crushname should be between 3 and 10 characters.")
     @NotBlank(message = "CrushName cannot be null.")
     private String crushName;
     @AssertTrue(message = "Please accept terms and conditions to proceed.")

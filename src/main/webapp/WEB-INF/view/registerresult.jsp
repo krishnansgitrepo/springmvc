@@ -21,6 +21,7 @@
         ${hobby}
     </c:forEach>
     Gender: ${userRegistration.gender}<br/>
-
+    Email: ${userRegistration.contactDto.emailAddress}
+    Phone: ${userRegistration.contactDto.phone}
 </body>
 </html>

@@ -14,6 +14,14 @@ public class UserRegisterDto {
     private String[] hobbies;
     private String gender;
 
+//    @Age(lower=18, upper=60, message="age not in range {lower} - {upper}")
+//    private int age;
+
+    @Age(lower=33, upper=70)//not specifying the default message
+    private Integer age;
+
+    private ContactDto contactDto;
+
     public String getName() {
         return name;
     }
@@ -60,5 +68,21 @@ public class UserRegisterDto {
 
     public void setHobbies(String[] hobbies) {
         this.hobbies = hobbies;
+    }
+
+    public ContactDto getContactDto() {
+        return contactDto;
+    }
+
+    public void setContactDto(ContactDto contactDto) {
+        this.contactDto = contactDto;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
     }
 }

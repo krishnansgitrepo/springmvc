@@ -11,8 +11,11 @@
     <title>Love Results</title>
 </head>
 <body>
-You found love!
+
+<h2>You found love!</h2>
 <label>Crush:</label> ${userInfo.crushName}
-<label>User:</label> ${userInfo.userName}
+AND <label>User:</label> ${userInfo.userName} are FRIENDS!
+<br/>
+<a href="/LoveCal_war/showemailshare/${userInfo.userName}">Send result to email</a>
 </body>
 </html>

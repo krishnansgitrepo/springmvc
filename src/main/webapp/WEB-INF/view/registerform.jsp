@@ -18,6 +18,7 @@
         <div align="center">
             <label for="nameid">Name:</label><form:input path="name" id="nameid"></form:input><br>
             <label for="userNameId">User Name:</label><form:input path="userName" id="userNameId"></form:input><br>
+            <label for="age">Age:</label><form:input path="age" id="age"></form:input><form:errors path="age"/><br>
             <label for="passwordId">Password:</label><form:input path="password" id="passwordId"></form:input><br>
             <label for="countryId">Country:</label><form:select path="country" id="countryId">
             <form:option value="india" label="India"/>
@@ -28,6 +29,8 @@
             <label>Gender:</label>
             Male <form:radiobutton path="Gender" value="male"/>
             Female <form:radiobutton path="Gender" value="female"/><br>
+            <label>Email:</label><form:input path="contactDto.emailAddress"></form:input><form:errors path="contactDto.emailAddress"></form:errors>
+            <label>Phone:</label><form:input path="contactDto.Phone"></form:input>
             <input type="submit" value="Register"/>
         </div>
     </form:form>

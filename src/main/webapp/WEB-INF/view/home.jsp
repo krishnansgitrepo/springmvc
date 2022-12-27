@@ -24,9 +24,9 @@
 <form:form action="calculate" method="get" modelAttribute="userInfo">
     <div align="center">
         <h1>Calculate Love</h1>
-        <label for="nid">Name:</label><form:input id="nid" path="userName"/><br>
-        <label for="cid">Crush Name:</label><form:input id="cid" path="crushName"/><br>
-        <label>Accept terms and conditions:</label><form:checkbox path="termsAndConditionsAccepted" value="true"></form:checkbox><br>
+        <label for="nid">Name:</label><form:input id="nid" path="userName"/><form:errors path="userName"/><br>
+        <label for="cid">Crush Name:</label><form:input id="cid" path="crushName"/><form:errors path="crushName"/><br>
+        <label>Accept terms and conditions:</label><form:checkbox path="termsAndConditionsAccepted" value="true"></form:checkbox><form:errors path="termsAndConditionsAccepted"/><br>
         <input type="submit" value="Calculate"/>
     </div>
 </form:form>
